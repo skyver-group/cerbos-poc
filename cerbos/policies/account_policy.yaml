@@ -1,0 +1,31 @@
+---
+apiVersion: api.cerbos.dev/v1
+resourcePolicy:
+  version: "default"
+  resource: "account"
+  importDerivedRoles:
+    - derived_account
+  rules:
+    - actions: ['*']
+      effect: EFFECT_ALLOW
+      derivedRoles:
+        - owner
+
+    - actions: ['*']
+      effect: EFFECT_ALLOW
+      derivedRoles:
+        - admin
+
+    - actions: ['view']
+      effect: EFFECT_ALLOW
+      roles:
+        - user
+      condition:
+        match:
+          expr: request.resource.attr.public == true
+
+  schemas:
+    principalSchema:
+      ref: cerbos:///principal.json
+    resourceSchema:
+      ref: cerbos:///album/object.json

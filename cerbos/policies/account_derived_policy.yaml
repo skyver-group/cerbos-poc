@@ -1,0 +1,15 @@
+---
+apiVersion: "api.cerbos.dev/v1"
+description: |-
+  Common dynamic roles used within the Accounts app
+derivedRoles:
+  name: derived_account
+  definitions:
+    - name: owner
+      parentRoles: ["user"]
+      condition:
+        match:
+          expr: request.resource.attr.user_id == request.principal.id
+
+    - name: admin
+      parentRoles: ["admin"]
