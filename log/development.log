@@ -436,3 +436,272 @@ Processing by AccountsController#index as */*
 Completed 200 OK in 10ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 864)
 
 
+  [1m[36mAccount Load (0.6ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts" ORDER BY "accounts"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mAccount Load (1.3ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts" ORDER BY "accounts"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/accounts" for ::1 at 2023-03-24 10:54:34 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AccountsController#index as */*
+  [1m[36mAccount Load (0.7ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  ↳ app/controllers/accounts_controller.rb:8:in `map'
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 4.4ms | Allocations: 36530)
+
+
+  
+Cerbos::Error (Google::Protobuf::UnexpectedStructType):
+  
+app/controllers/accounts_controller.rb:19:in `index'
+Started GET "/accounts" for ::1 at 2023-03-24 10:55:07 +0300
+Processing by AccountsController#index as */*
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  ↳ app/controllers/accounts_controller.rb:8:in `map'
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  ↳ app/controllers/accounts_controller.rb:28:in `index'
+Completed 200 OK in 11ms (Views: 0.7ms | ActiveRecord: 7.0ms | Allocations: 3921)
+
+
+Started GET "/accounts" for ::1 at 2023-03-24 10:55:33 +0300
+Processing by AccountsController#index as */*
+  [1m[36mAccount Load (4.8ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  ↳ app/controllers/accounts_controller.rb:8:in `map'
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  ↳ app/controllers/accounts_controller.rb:28:in `index'
+Completed 200 OK in 14ms (Views: 0.6ms | ActiveRecord: 8.4ms | Allocations: 3874)
+
+
+Started GET "/accounts" for ::1 at 2023-03-24 10:57:11 +0300
+Processing by AccountsController#index as */*
+  [1m[36mAccount Load (0.8ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  ↳ app/controllers/accounts_controller.rb:8:in `map'
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  ↳ app/controllers/accounts_controller.rb:28:in `index'
+Completed 200 OK in 14ms (Views: 0.7ms | ActiveRecord: 3.4ms | Allocations: 3938)
+
+
+Started GET "/accounts" for ::1 at 2023-03-24 10:57:18 +0300
+Processing by AccountsController#index as */*
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  ↳ app/controllers/accounts_controller.rb:8:in `map'
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  ↳ app/controllers/accounts_controller.rb:28:in `index'
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1269)
+
+
+Started GET "/accounts" for ::1 at 2023-03-24 10:57:26 +0300
+Processing by AccountsController#index as */*
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  ↳ app/controllers/accounts_controller.rb:8:in `map'
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  ↳ app/controllers/accounts_controller.rb:28:in `index'
+Completed 200 OK in 9ms (Views: 0.7ms | ActiveRecord: 4.0ms | Allocations: 3951)
+
+
+Started GET "/accounts" for ::1 at 2023-03-24 10:58:12 +0300
+Processing by AccountsController#index as */*
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  ↳ app/controllers/accounts_controller.rb:8:in `map'
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  ↳ app/controllers/accounts_controller.rb:30:in `index'
+Completed 200 OK in 14ms (Views: 0.8ms | ActiveRecord: 6.2ms | Allocations: 3956)
+
+
+Started GET "/accounts" for ::1 at 2023-03-24 10:58:26 +0300
+Processing by AccountsController#index as */*
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  ↳ app/controllers/accounts_controller.rb:8:in `map'
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  ↳ app/controllers/accounts_controller.rb:31:in `index'
+Completed 200 OK in 10ms (Views: 1.1ms | ActiveRecord: 4.0ms | Allocations: 4044)
+
+
+Started GET "/accounts" for ::1 at 2023-03-24 10:58:44 +0300
+Processing by AccountsController#index as */*
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  ↳ app/controllers/accounts_controller.rb:8:in `map'
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  ↳ app/controllers/accounts_controller.rb:30:in `index'
+Completed 200 OK in 10ms (Views: 0.7ms | ActiveRecord: 4.7ms | Allocations: 3958)
+
+
+Started GET "/accounts" for ::1 at 2023-03-24 10:58:56 +0300
+Processing by AccountsController#index as */*
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  ↳ app/controllers/accounts_controller.rb:8:in `map'
+  [1m[36mCACHE Account Load (0.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  ↳ app/controllers/accounts_controller.rb:30:in `index'
+Completed 200 OK in 10ms (Views: 1.0ms | ActiveRecord: 4.8ms | Allocations: 3958)
+
+
+Started GET "/accounts" for ::1 at 2023-03-24 11:00:51 +0300
+Processing by AccountsController#index as */*
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  ↳ app/controllers/accounts_controller.rb:8:in `map'
+Completed 204 No Content in 11ms (ActiveRecord: 4.3ms | Allocations: 3332)
+
+
+Started GET "/accounts" for ::1 at 2023-03-24 11:01:10 +0300
+Processing by AccountsController#index as */*
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  ↳ app/controllers/accounts_controller.rb:8:in `map'
+Completed 204 No Content in 7ms (ActiveRecord: 3.6ms | Allocations: 3342)
+
+
+Started GET "/accounts" for ::1 at 2023-03-24 11:07:59 +0300
+Processing by AccountsController#index as */*
+  [1m[36mAccount Load (1.0ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  ↳ app/controllers/accounts_controller.rb:8:in `map'
+Completed 204 No Content in 33ms (ActiveRecord: 15.0ms | Allocations: 6024)
+
+
+Started GET "/accounts" for ::1 at 2023-03-24 11:10:08 +0300
+Processing by AccountsController#index as */*
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  ↳ app/controllers/accounts_controller.rb:8:in `map'
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 14.7ms | Allocations: 3408)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/accounts_controller.rb:25:in `[]'
+app/controllers/accounts_controller.rb:25:in `block (2 levels) in index'
+app/controllers/accounts_controller.rb:25:in `filter'
+app/controllers/accounts_controller.rb:25:in `block in index'
+app/controllers/accounts_controller.rb:24:in `filter'
+app/controllers/accounts_controller.rb:24:in `index'
+Started GET "/accounts" for ::1 at 2023-03-24 11:10:55 +0300
+Processing by AccountsController#index as */*
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  ↳ app/controllers/accounts_controller.rb:8:in `map'
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 3.1ms | Allocations: 3382)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/accounts_controller.rb:25:in `[]'
+app/controllers/accounts_controller.rb:25:in `block (2 levels) in index'
+app/controllers/accounts_controller.rb:25:in `filter'
+app/controllers/accounts_controller.rb:25:in `block in index'
+app/controllers/accounts_controller.rb:24:in `collect'
+app/controllers/accounts_controller.rb:24:in `index'
+Started GET "/accounts" for ::1 at 2023-03-24 11:11:10 +0300
+Processing by AccountsController#index as */*
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  ↳ app/controllers/accounts_controller.rb:8:in `map'
+Completed 204 No Content in 14ms (ActiveRecord: 9.0ms | Allocations: 3339)
+
+
+Started GET "/accounts" for ::1 at 2023-03-24 11:11:37 +0300
+Processing by AccountsController#index as */*
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  ↳ app/controllers/accounts_controller.rb:8:in `map'
+Completed 204 No Content in 14ms (ActiveRecord: 8.8ms | Allocations: 3319)
+
+
+Started GET "/accounts" for ::1 at 2023-03-24 11:12:10 +0300
+Processing by AccountsController#index as */*
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  ↳ app/controllers/accounts_controller.rb:8:in `map'
+Completed 204 No Content in 11ms (ActiveRecord: 7.4ms | Allocations: 3317)
+
+
+Started GET "/accounts" for ::1 at 2023-03-24 11:12:24 +0300
+Processing by AccountsController#index as */*
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  ↳ app/controllers/accounts_controller.rb:8:in `map'
+Completed 204 No Content in 11ms (ActiveRecord: 5.7ms | Allocations: 3318)
+
+
+Started GET "/accounts" for ::1 at 2023-03-24 11:12:37 +0300
+Processing by AccountsController#index as */*
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  ↳ app/controllers/accounts_controller.rb:8:in `map'
+Completed 204 No Content in 9ms (ActiveRecord: 4.3ms | Allocations: 3318)
+
+
+Started GET "/accounts" for ::1 at 2023-03-24 11:12:52 +0300
+Processing by AccountsController#index as */*
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  ↳ app/controllers/accounts_controller.rb:8:in `map'
+Completed 204 No Content in 7ms (ActiveRecord: 2.9ms | Allocations: 3317)
+
+
+Started GET "/accounts" for ::1 at 2023-03-24 11:13:09 +0300
+Processing by AccountsController#index as */*
+  [1m[36mAccount Load (0.8ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  ↳ app/controllers/accounts_controller.rb:8:in `map'
+Completed 204 No Content in 9ms (ActiveRecord: 4.1ms | Allocations: 3330)
+
+
+Started GET "/accounts" for ::1 at 2023-03-24 11:13:44 +0300
+Processing by AccountsController#index as */*
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  ↳ app/controllers/accounts_controller.rb:8:in `map'
+Completed 204 No Content in 8ms (ActiveRecord: 3.4ms | Allocations: 3319)
+
+
+  [1m[36mAccount Load (2.4ms)[0m  [1m[34mSELECT 1, 2, 4 FROM "accounts"[0m
+  [1m[36mAccount Load (1.2ms)[0m  [1m[34mSELECT 1, 2, 4 FROM "accounts"[0m
+  [1m[36mAccount Load (1.2ms)[0m  [1m[34mSELECT 1, 2, 4 FROM "accounts"[0m
+  [1m[36mAccount Load (2.4ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts" WHERE "accounts"."id" IN ($1, $2, $3)[0m  [["id", 1], ["id", 2], ["id", 3]]
+  [1m[36mAccount Count (6.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "accounts" WHERE "accounts"."id" IN ($1, $2, $3)[0m  [["id", 1], ["id", 2], ["id", 3]]
+Started GET "/accounts" for ::1 at 2023-03-24 11:27:02 +0300
+Processing by AccountsController#index as */*
+  [1m[36mAccount Load (0.6ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  ↳ app/controllers/accounts_controller.rb:8:in `map'
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 9.7ms | Allocations: 7837)
+
+
+  
+NameError (undefined local variable or method `json' for #<AccountsController:0x0000000005aed8>
+Did you mean?  JSON):
+  
+app/controllers/accounts_controller.rb:30:in `index'
+Started GET "/accounts" for ::1 at 2023-03-24 11:27:25 +0300
+Processing by AccountsController#index as */*
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  ↳ app/controllers/accounts_controller.rb:8:in `map'
+Completed 200 OK in 20ms (Views: 0.2ms | ActiveRecord: 14.3ms | Allocations: 3405)
+
+
+Started GET "/accounts" for ::1 at 2023-03-24 11:28:14 +0300
+Processing by AccountsController#index as */*
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  ↳ app/controllers/accounts_controller.rb:8:in `map'
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts" WHERE "accounts"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/accounts_controller.rb:30:in `index'
+Completed 200 OK in 13ms (Views: 3.7ms | ActiveRecord: 4.7ms | Allocations: 4556)
+
+
+Started GET "/accounts" for ::1 at 2023-03-24 11:28:25 +0300
+Processing by AccountsController#index as */*
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  ↳ app/controllers/accounts_controller.rb:8:in `map'
+  [1m[36mAccount Load (0.6ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts" WHERE "accounts"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/accounts_controller.rb:30:in `index'
+Completed 200 OK in 11ms (Views: 0.9ms | ActiveRecord: 4.6ms | Allocations: 4041)
+
+
+Started GET "/accounts" for ::1 at 2023-03-24 11:28:31 +0300
+Processing by AccountsController#index as */*
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  ↳ app/controllers/accounts_controller.rb:8:in `map'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 3.6ms | Allocations: 3419)
+
+
+Started GET "/accounts" for ::1 at 2023-03-24 11:34:11 +0300
+Processing by AccountsController#index as */*
+  [1m[36mAccount Load (0.7ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  ↳ app/controllers/accounts_controller.rb:26:in `map'
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts" WHERE "accounts"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/accounts_controller.rb:13:in `index'
+Completed 200 OK in 36ms (Views: 1.4ms | ActiveRecord: 8.0ms | Allocations: 6696)
+
+
+Started GET "/accounts" for ::1 at 2023-03-24 11:34:24 +0300
+Processing by AccountsController#index as */*
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT "accounts".* FROM "accounts"[0m
+  ↳ app/controllers/accounts_controller.rb:26:in `map'
+Completed 200 OK in 18ms (Views: 0.1ms | ActiveRecord: 12.7ms | Allocations: 3443)
+
+
